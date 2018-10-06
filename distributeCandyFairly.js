@@ -28,6 +28,27 @@
 // distribute(10, 10) # should be [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 // distribute(15, 10) # should be [2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
 
+// function distribute(m, n) {  
+//   if (n <= 0) {return []};
+//   if (m <= 0) { 
+//     let m = 0; 
+//     let noLuck = m.toString().repeat(n).split('');
+//     let sadArr = [];
+//     noLuck.forEach(function(i) { sadArr.push(Number(i))})
+//     return sadArr;
+//   };
+//   let extraCandies = m % n;
+//   let leastPossibleCandyAmount = Math.floor( m / n );
+//   let firstDistributionOfCandy = leastPossibleCandyAmount.toString().repeat(n).split('');
+//   let numArr = []
+//   firstDistributionOfCandy.forEach(function(i) { numArr.push(Number(i))})
+//   for (let i = 0; i < extraCandies; i++) {
+//   numArr[i] = numArr[i] + 1 ;;
+//   }
+// return numArr;
+// }
+
+
 function distribute(m, n) {  
   if (n <= 0) {return []};
   if (m <= 0) { 
@@ -39,16 +60,32 @@ function distribute(m, n) {
   };
   let extraCandies = m % n;
   let leastPossibleCandyAmount = Math.floor( m / n );
-  let firstDistributionOfCandy = leastPossibleCandyAmount.toString().repeat(n).split('');
-  let numArr = []
-  firstDistributionOfCandy.forEach(function(i) { numArr.push(Number(i))})
+  let numArr = [];
+  for(let i = 0; i < n; i++) numArr.push(leastPossibleCandyAmount);
   for (let i = 0; i < extraCandies; i++) {
   numArr[i] = numArr[i] + 1 ;;
   }
 return numArr;
 }
 
+function distribute(m, n) {
+
+  if (m < 0) { m =0; }
+  if (n <=0) return [];
   
+    var candysForSure = Math.floor(m / n);
+    var candysLeft = m % n;
+    var kids = new Array(n).fill(candysForSure);
+    
+    for (var i=0; i < candysLeft; i++){
+      kids[i]++;
+    }
+    
+    
+    return kids;
+  }
+
+
 
 
 console.log(57123%35);
