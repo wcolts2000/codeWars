@@ -62,4 +62,4 @@ const kaprekarSplit = n => {
 // console.log(kaprekarSplit(45), 2)
 // console.log(kaprekarSplit(2223), 3)
 // console.log(kaprekarSplit(5050), 4)
-// console.log(kaprekarSplit(5051), -1)
+console.log(kaprekarSplit(5051), -1)
