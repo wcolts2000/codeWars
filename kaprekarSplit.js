@@ -57,9 +57,9 @@ const kaprekarSplit = n => {
 //     return -1;
 // }
 
-console.log(kaprekarSplit(1), 0)
-console.log(kaprekarSplit(9), 1)
-console.log(kaprekarSplit(45), 2)
-console.log(kaprekarSplit(2223), 3)
-console.log(kaprekarSplit(5050), 4)
-console.log(kaprekarSplit(5051), -1)
+// console.log(kaprekarSplit(1), 0)
+// console.log(kaprekarSplit(9), 1)
+// console.log(kaprekarSplit(45), 2)
+// console.log(kaprekarSplit(2223), 3)
+// console.log(kaprekarSplit(5050), 4)
+// console.log(kaprekarSplit(5051), -1)
