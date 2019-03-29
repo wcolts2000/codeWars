@@ -19,7 +19,7 @@ function warnTheSheep(queue) {
     return "Pls go away and stop eating my sheep";
   }
   let counter = 1;
-  for (let i = queue.length - 1; i > 0; i--) {
+  for (let i = queue.length - 1; i >= 0; i--) {
     if (queue[i] === "sheep") {
       counter++;
     } else if (queue[i] === "wolf") {
