@@ -7,7 +7,6 @@
 // If no occurrences can be found, a count of 0 should be returned.
 
 function strCount(str, letter){  
-  //code here
   let strArr = Array.from(str);
   let count = 0;
   for(let i = 0; i < strArr.length; i++) {
@@ -15,8 +14,7 @@ function strCount(str, letter){
     count++;
     }
   }
-  return count;
-  
+  return count;  
 }
 // strCount('Hello', 'o') // => 1
 // strCount('Hello', 'l') // => 2
