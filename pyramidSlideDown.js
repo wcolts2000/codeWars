@@ -1,3 +1,9 @@
+function longestSlideDown (pyramid) {
+  let result = 0;
+  pyramid.forEach(numArr => result += numArr.sort((a,b) => b - a)[0])
+  return result
+}
+
 console.log(
   longestSlideDown([[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]]),
   23,
