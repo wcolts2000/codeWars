@@ -4,7 +4,6 @@ function simple_assembler(program) {
   let currentInstruction = 0;
   const mov = (a, b) => {
     if (isNaN(Number(b))) {
-      console.log('yeah');
       register[a] = register[b];
       return currentInstruction++;
     }
@@ -24,13 +23,7 @@ function simple_assembler(program) {
 
   const jnz = (a, step) => {
     if (register[a] !== 0) {
-      // if (step < 0) {
-      //   currentInstruction -= step
-      // } else {
-      //   currentInstruction += step
-      // }
       currentInstruction += Number(step);
-      console.log(currentInstruction);
     } else {
       currentInstruction++;
     }
@@ -45,17 +38,12 @@ function simple_assembler(program) {
 
   const decode = str => {
     let currentOperation = str.split(' ');
-    console.log(currentOperation);
     return currentOperation;
   };
 
   while (currentInstruction < program.length) {
     let op = decode(program[currentInstruction]);
-    console.log(opCodes[op[0]]);
     opCodes[op[0]](op[1], op[2]);
-    console.log(register);
-    // if (op[0] !== 'jnz')
-    // currentInstruction++
   }
 
   return register;
