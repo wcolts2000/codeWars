@@ -15,6 +15,10 @@ function solution(str) {
   return ans;
 }
 
+// clever solution
+// function solution(str) {
+//   return (str.length % 2 ? str + '_' : str).match(/../g);
+// }
 console.log(solution('abcdef'), ['ab', 'cd', 'ef']);
 console.log(solution('abcdefg'), ['ab', 'cd', 'ef', 'g_']);
 console.log(solution(''), []);
