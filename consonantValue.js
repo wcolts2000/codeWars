@@ -34,6 +34,8 @@ function solve(s) {
   return answer;
 }
 
+// const solve = s => s.split(/[aeiou]+/).reduce((s,n)=> Math.max(s, n.split('').reduce((a,b)=> a + b.charCodeAt(0)-96,0 )), 0);
+
 console.log(solve('zodiac'), 26);
 console.log(solve('chruschtschov'), 80);
 console.log(solve('khrushchev'), 38);
