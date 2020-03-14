@@ -6,9 +6,13 @@
 
 // arr(5) // => [0,1,2,3,4]
 
-const arr = N => [
-  /* the numbers 0 to N-1 */
-];
+const arr = N => {
+  const ans = [];
+  for (let i = 0; i < N; i++) {
+    ans.push(i);
+  }
+  return ans;
+};
 
 console.log(arr(), []);
 console.log(arr(4), [0, 1, 2, 3]);
