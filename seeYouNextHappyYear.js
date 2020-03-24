@@ -35,6 +35,12 @@ function nextHappyYear(year) {
   return answer;
 }
 
+// arhigod, patrykolszewski3, Agaxx, AnisMnassri, Chiranjeev26, koubaa
+// function nextHappyYear(a){
+//   while(new Set([...++a+'']).size<4);
+//   return a;
+// }
+
 console.log(nextHappyYear(1001), 1023);
 console.log(nextHappyYear(1123), 1203);
 console.log(nextHappyYear(2001), 2013);
