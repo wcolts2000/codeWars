@@ -16,5 +16,7 @@ function halvingSum(n) {
   return ans;
 }
 
+// halvingSum=H=Q=>Q&&Q+H(Q>>1)
+
 console.log(halvingSum(25), 47);
 console.log(halvingSum(127), 247);
