@@ -11,13 +11,14 @@
 //   args[1] = temp;
 // }
 
-function swapValues() {
-  var args = [...arguments].flat();
-  var temp = args[0];
-  console.log(temp);
-  args[0] = args[1];
-  args[1] = temp;
+function swapValues(arr) {
+  var temp = arr[0];
+  arr[0] = arr[1];
+  arr[1] = temp;
 }
+
+const swapValues = (arr) => ([arr[1], arr[0]] = [arr[0], arr[1]]);
+
 var arr = [1, 2];
 swapValues(arr);
 console.log(arr[0], 2, 'Failed swapping numbers');

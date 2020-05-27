@@ -7,27 +7,27 @@
 // If your language supports it, try using a switch statement.
 
 function switchItUp(number) {
- switch (number) {_
+  switch (number) {
     case 0:
-      return "zero";
+      return 'Zero';
     case 1:
-      return "one";
+      return 'One';
     case 2:
-      return "two";
+      return 'Two';
     case 3:
-      return "three";
+      return 'Three';
     case 4:
-      return "four";
+      return 'Four';
     case 5:
-      return "five";
+      return 'Five';
     case 6:
-      return "six";
+      return 'Six';
     case 7:
-      return "seven";
+      return 'Seven';
     case 8:
-      return "eight";
+      return 'Eight';
     case 9:
-      return "nine";
+      return 'Nine';
     default:
       return null;
   }
