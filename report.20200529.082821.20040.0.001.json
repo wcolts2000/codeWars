@@ -1,0 +1,316 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200529.082821.20040.0.001.json",
+    "dumpEventTime": "2020-05-29T08:28:21Z",
+    "dumpEventTimeStamp": "1590766101382",
+    "processId": 20040,
+    "cwd": "E:\\dev\\codeWars",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "-r",
+      "c:\\Users\\T1700\\.vscode\\extensions\\wallabyjs.quokka-vscode-1.0.290\\dist\\wallaby\\node_modules\\esm",
+      "c:\\Users\\T1700\\.vscode\\extensions\\wallabyjs.quokka-vscode-1.0.290\\dist\\wallaby\\server.js",
+      "runner",
+      "0",
+      "64205",
+      "quokka@1.0.0",
+      "",
+      "E:\\dev\\codeWars\\node_modules",
+      "quokka_fake_path\\original",
+      "",
+      ""
+    ],
+    "nodejsVersion": "v12.4.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.4.0",
+      "v8": "7.4.288.27-node.18",
+      "uv": "1.29.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.3",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.4.0/node-v12.4.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.4.0/node-v12.4.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.4.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18363",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "host": "SEAN-WIN10"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff736a464a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+9161"
+    },
+    {
+      "pc": "0x00007ff736a49d94",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23732"
+    },
+    {
+      "pc": "0x00007ff736a48db8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+19672"
+    },
+    {
+      "pc": "0x00007ff736b3256b",
+      "symbol": "uv_loop_fork+48251"
+    },
+    {
+      "pc": "0x00007ff736e6a56e",
+      "symbol": "v8::internal::Parser::ReportMessageAt+206"
+    },
+    {
+      "pc": "0x00007ff736e3e5ea",
+      "symbol": "v8::internal::wasm::StreamingDecoder::Fail+666"
+    },
+    {
+      "pc": "0x00007ff736ed4a3c",
+      "symbol": "v8::internal::Heap::CreateFillerObjectAt+2972"
+    },
+    {
+      "pc": "0x00007ff736f1231c",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller+60"
+    },
+    {
+      "pc": "0x00007ff736f122d0",
+      "symbol": "v8::internal::Factory::NewUninitializedFixedArray+64"
+    },
+    {
+      "pc": "0x00007ff7370fdc5e",
+      "symbol": "v8_inspector::V8StackTraceId::V8StackTraceId+123470"
+    },
+    {
+      "pc": "0x00007ff73721fe02",
+      "symbol": "v8::internal::OptimizingCompileDispatcher::Unblock+14882"
+    },
+    {
+      "pc": "0x00007ff7376d4196",
+      "symbol": "v8::internal::NativesCollection<0>::GetScriptsSource+662454"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1966112768,
+    "totalCommittedMemory": 1966112768,
+    "usedMemory": 1929370808,
+    "availableMemory": 248962024,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 523976,
+        "used": 31712,
+        "available": 492264
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16767232,
+        "used": 0,
+        "available": 16767232
+      },
+      "old_space": {
+        "memorySize": 22667264,
+        "committedMemory": 22667264,
+        "capacity": 20812152,
+        "used": 20812152,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 688128,
+        "committedMemory": 688128,
+        "capacity": 378592,
+        "used": 378592,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 1052672,
+        "capacity": 588000,
+        "used": 588000,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1005064192,
+        "committedMemory": 1005064192,
+        "capacity": 1005046016,
+        "used": 1005046016,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 4.89,
+    "kernelCpuSeconds": 0.968,
+    "cpuConsumptionPercent": 117.16,
+    "maxRss": 2003492864,
+    "pageFaults": {
+      "IORequired": 704732,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 91,
+      "writes": 90
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "ANDROID_HOME": "C:\\Users\\T1700\\AppData\\Local\\Android\\Sdk",
+    "APPDATA": "C:\\Users\\T1700\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132194547959891678",
+    "ChocolateyToolsLocation": "C:\\tools",
+    "CLASSPATH": ".;",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "SEAN-WIN10",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DEBUG_COLORS": "no",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ESM_OPTIONS": "{\"await\":true}",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\T1700",
+    "INTEL_DEV_REDIST": "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_211",
+    "LOCALAPPDATA": "C:\\Users\\T1700\\AppData\\Local",
+    "LOGONSERVER": "\\\\SEAN-WIN10",
+    "MIC_LD_LIBRARY_PATH": "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\mic",
+    "NUMBER_OF_PROCESSORS": "8",
+    "NVM_HOME": "C:\\ProgramData\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OneDrive": "C:\\Users\\T1700\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\T1700\\OneDrive",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\vim\\vim80;C:\\ProgramData\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\postgresql\\10\\bin;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\Users\\T1700\\AppData\\Local\\Android\\Sdk\\platform-tools;C:\\Program Files\\PostgreSQL\\11\\lib;C:\\Program Files\\PostgreSQL\\11\\bin;C:\\tools\\php74;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\T1700\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\T1700\\AppData\\Roaming\\npm;C:\\Program Files\\heroku\\bin;C:\\Users\\T1700\\AppData\\Local\\hyper\\app-3.0.2\\resources\\bin;C:\\tools\\dart-sdk\\bin;C:\\Users\\T1700\\AppData\\Roaming\\Pub\\Cache\\bin;C:\\tools\\Cmder;C:\\Users\\T1700\\AppData\\Local\\Android\\Sdk\\platform-tools;C:\\Users\\T1700\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\T1700\\AppData\\Roaming\\Python\\Python37\\Scripts;C:\\Users\\T1700\\AppData\\Roaming\\Python\\Python37;C:\\Program Files\\PostgreSQL\\11\\lib;C:\\Program Files\\PostgreSQL\\11\\bin;C:\\Users\\T1700\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\T1700\\AppData\\Local\\Yarn\\bin",
+    "Path": "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\vim\\vim80;C:\\ProgramData\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\postgresql\\10\\bin;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\Users\\T1700\\AppData\\Local\\Android\\Sdk\\platform-tools;C:\\Program Files\\PostgreSQL\\11\\lib;C:\\Program Files\\PostgreSQL\\11\\bin;C:\\tools\\php74;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\T1700\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\T1700\\AppData\\Roaming\\npm;C:\\Program Files\\heroku\\bin;C:\\Users\\T1700\\AppData\\Local\\hyper\\app-3.0.2\\resources\\bin;C:\\tools\\dart-sdk\\bin;C:\\Users\\T1700\\AppData\\Roaming\\Pub\\Cache\\bin;C:\\tools\\Cmder;C:\\Users\\T1700\\AppData\\Local\\Android\\Sdk\\platform-tools;C:\\Users\\T1700\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\T1700\\AppData\\Roaming\\Python\\Python37\\Scripts;C:\\Users\\T1700\\AppData\\Roaming\\Python\\Python37;C:\\Program Files\\PostgreSQL\\11\\lib;C:\\Program Files\\PostgreSQL\\11\\bin;C:\\Users\\T1700\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\T1700\\AppData\\Local\\Yarn\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW",
+    "PIPE_LOGGING": "true",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 60 Stepping 3, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3c03",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "E:\\dev\\codeWars",
+    "PYTHONHOME": "C:\\Python37",
+    "quokka": "{\"globalConfigFile\":\"C:\\\\Users\\\\T1700\\\\.quokka\\\\config.json\",\"tempDir\":\"C:\\\\Users\\\\T1700\\\\.quokka\\\\data\\\\i4616\",\"stdEsm\":true}",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\T1700\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\T1700\\AppData\\Local\\Temp",
+    "undefined": "",
+    "USERDOMAIN": "SEAN-WIN10",
+    "USERDOMAIN_ROAMINGPROFILE": "SEAN-WIN10",
+    "USERNAME": "T1700",
+    "USERPROFILE": "C:\\Users\\T1700",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_CWD": "C:\\Users\\T1700\\AppData\\Local\\Programs\\Microsoft VS Code",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "\\\\.\\pipe\\2102b852313e309bcec300911c72145c-1.45.1-main-sock",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-a4237ac6-908c-40fe-bf05-fb7c8208b801-sock",
+    "VSCODE_LOGS": "C:\\Users\\T1700\\AppData\\Roaming\\Code\\logs\\20200528T061336",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en-us\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "C:\\Users\\T1700\\AppData\\Roaming\\Code\\CachedData\\5763d909d5f12fe19f215cbfdd29a91c0fa9208a",
+    "VSCODE_PID": "11436",
+    "WALLABY_PRODUCTION": "true",
+    "WALLABY_USE_WSL": "false",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVAST Software\\Avast\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}
